@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For...In</title>
+</head>
+<body>
+
+<p>
+Haga clic en el botón para recorrer las propiedades de un objeto.</p>
+
+<button onclick="myFunction()">intentalo</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = {fname:"John", lname:"Doe", age:25}; 
+    
+    var text = "";
+    var x;
+    for (x in person) {
+        text += person[x] + " ";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+</body>
+</html>

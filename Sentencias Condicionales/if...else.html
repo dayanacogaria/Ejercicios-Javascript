@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If...Else</title>
+</head>
+<body>
+<p>
+Haga clic en el botón para obtener un saludo basado en tiempo:</p>
+
+<button onclick="myFunction()">Intentalo</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "buenos dias";
+    } else if (time < 20) {
+        greeting = "Buenas tardes";
+    } else {
+        greeting = "buenas noches";
+    }
+document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+
+
+
+
+</body>
+</html>
